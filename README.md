@@ -1,2 +1,19 @@
-# Air-Cast-Prediction
-AirCast is an AI-powered system that predicts air quality levels based on real-time environmental data. Designed to aid urban planners, environmental researchers, and health-conscious citizens, the system uses machine learning models to forecast Air Quality Index (AQI) values with high accuracy.
+# AirCast – Air Quality Prediction System
+
+AirCast is an AI-based system that predicts Air Quality Index (AQI) based on environmental data (e.g., PM2.5, PM10, temperature, humidity). It uses a simple ML model with a Flask-based web interface for live predictions.
+
+## Features
+- AQI prediction using regression
+- Flask web app for real-time input & output
+- Extendable with real-time sensors or APIs
+
+## Structure
+- `src/`: ML code and main logic
+- `data/`: Sample air quality datasets
+- `models/`: Saved model files
+- `templates/` & `static/`: Flask front-end
+
+## To Run
+```bash
+pip install -r requirements.txt
+python src/aircast.py
